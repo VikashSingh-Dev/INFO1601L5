@@ -1,23 +1,22 @@
-let str1 ="Hello World";
-let str2 = 'Hello World';
-let str3 = `
-    hello 
-    world
-`;// template literal (backtick above tab key)
+console.log('1' == 1); //true
+console.log(1 == true); //true
+console.log("false" == false); // "false" is not false
+console.log("false" == true); // "false" is not true either
 
-console.log(str1, str2, str3);
-// template literals retain spaces in the tag and allow for multiline expressions
+if("false")
+   console.log("Hello false!") //but "false" is true enough here
+  // for hard comparisons use === as == gives rise to undesirable events
 
-// string interpolation
-let name = "bob";
-let age = 24;
+//task 4.2
+console.log('1' === 1); //false
+console.log(1 === true); //false
+console.log("true" === true); //false
 
-console.log(typeof(name))//string
-// name is deprecated as it is a special word in js and it needs to be deprecated to be able to be used freely
-console.log(typeof(age))//number
+//logical operators
+let grade = 67;
 
-console.log(`Hello my name is ${name}, I'm ${age} years old`);
-//Hello my name is bob, I'm 24 years old.
-
-console.log(`I was born in ${2020 - age}`)
-//I was born in 1966
+if( grade < 50){
+   console.log('Failed');
+}else{
+   console.log('Passed');
+}
